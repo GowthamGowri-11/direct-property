@@ -1,0 +1,388 @@
+/* About Page Styles */
+.about-page {
+  min-height: calc(100vh - 160px);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* About Sections */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section.bg-light {
+  background-color: var(--bg-light);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-grid.reverse {
+  direction: rtl;
+}
+
+.about-grid.reverse>* {
+  direction: ltr;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-list {
+  margin-top: 24px;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.list-icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* Mission & Vision */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.mission-card,
+.vision-card {
+  background-color: var(--bg-white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.mission-card p,
+.vision-card p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background-color: var(--bg-white);
+  padding: 32px 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.value-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  background-color: var(--bg-light);
+  padding: 32px 24px;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-md);
+}
+
+.team-avatar {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.team-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Motto Section */
+.motto-section {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  border-radius: 20px;
+  color: white;
+}
+
+.motto-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.motto-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.motto-text {
+  font-size: 42px;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 20px;
+}
+
+.motto-description {
+  font-size: 18px;
+  color: #d1d5db;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-grid.reverse {
+    direction: ltr;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-content h2,
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Developer Section */
+.developer-section {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.developer-avatar {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.developer-section h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.developer-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.developer-role {
+  font-size: 18px;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.developer-bio {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
+}
+
+.developer-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .developer-name {
+    font-size: 28px;
+  }
+
+  .developer-avatar {
+    font-size: 60px;
+  }
+}

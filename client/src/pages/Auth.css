@@ -1,0 +1,141 @@
+/* Auth Pages Styles (Login & Register) */
+.auth-page {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: var(--bg-light);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-card {
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.auth-header p {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* Login Toggle */
+.login-toggle {
+  display: flex;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 24px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.toggle-btn.active {
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Form Styles */
+.auth-card .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-card .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.btn-full {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Auth Footer */
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.auth-footer p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.auth-footer a {
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Demo Credentials */
+.demo-credentials {
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px;
+  background-color: var(--bg-white);
+  border-radius: 8px;
+  border: 1px dashed var(--border-color);
+}
+
+.demo-credentials p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.demo-credentials strong {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 24px;
+  }
+
+  .auth-header h1 {
+    font-size: 24px;
+  }
+
+  .auth-card .form-row {
+    grid-template-columns: 1fr;
+  }
+}
